@@ -1,4 +1,4 @@
-env.PROJECT_GIT_NAME = 'GLOBALBI_POC'
+env.PROJECT_GIT_NAME = 'GBI_POC_WORKING'
 env.PROJECT_NAME = env.PROJECT_GIT_NAME.toLowerCase()
 env.JOB = 'test'
 env.VERSION = '0.1'
@@ -66,7 +66,7 @@ node {
                script{
                     sh "pwd"
                     sh "ls -l"
-                    dir("./GLOBALBI_POC") {
+                    dir("./GBI_POC_WORKING") {
                     docker.build(imageName, "-f DockerFile .")
                     }
             }
